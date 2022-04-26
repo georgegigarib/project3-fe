@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+#drum-machine{
+  max-width: 500px;
+  background-color: black;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+#display{
+  width: 90%;
+  height: 90%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#display .drum-pad{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(200, 199, 199);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  color: black;
+  font-size: large;
+  font-style: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: black 3px 3px 5px;
+}
+.drum-pad audio{
+  display: none;
+}
+
+
+
+
