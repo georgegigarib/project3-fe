@@ -14,30 +14,38 @@ code {
 
 
 #drum-machine{
-  max-width: 500px;
-  background-color: black;
-  max-height: 500px;
+  width: 500px;
+  background-color: rgb(128, 128, 128);
+  height: 500px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
 }
 
 #display{
-  width: 90%;
-  height: 90%;
-  background-color: blue;
+  width: 150px;
+  height: 50px;
+  margin: 0 150px 0 150px; 
+  background-color: rgba(0, 179, 255, 0.792);
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 5px;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
 }
 
-#display .drum-pad{
+.drum-pad{
   width: 100px;
   height: 100px;
   background-color: rgb(200, 199, 199);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px;
+  margin: 15px;
   color: black;
   font-size: large;
   font-style: bold;
@@ -45,7 +53,12 @@ code {
   border-radius: 5px;
   box-shadow: black 3px 3px 5px;
 }
-.drum-pad audio{
+
+.drum-pad:hover{
+  background-color: rgb(250, 89, 89);
+  box-shadow: black 3px 3px 5px;
+}
+.clip{
   display: none;
 }
 
